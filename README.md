@@ -57,7 +57,7 @@ Designed for **Nexus Aquarium** in Washington, this project simulates a real-wor
 
 1. Clone repo:
    ```bash
-   git clone https://github.com/yourusername/aquarium-website.git
+   git clone https://github.com/serleh/aquarium-website.git
    cd aquarium-website
    ```
 2. Open `index.html` in your browser.
