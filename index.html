@@ -16,24 +16,28 @@
     />
   </head>
   <body>
-    <main class="main">
-      <section class="main__content">
-        <h1 class="main__title">Nexus Aquarium</h1>
-        <p class="main__text">
-          Discover the wonders of marine life in Washington's premier aquarium
-          destination
-        </p>
-        <p class="main__button">
-          <i class="fa-solid fa-calendar-check"></i>Book Your Adventure
-        </p>
-      </section>
-    </main>
+    <div class="main">
+      <main class="container">
+        <section class="main__content">
+          <h1 class="main__title">Nexus Aquarium</h1>
+          <p class="main__text">
+            Discover the wonders of marine life in Washington's premier aquarium
+            destination
+          </p>
+          <a class="main__button">
+            <i class="fa-solid fa-calendar-check"></i>Book Your Adventure
+          </a>
+        </section>
+      </main>
+    </div>
 
-    <section class="explore">
+    <section class="explore container">
       <h3 class="explore__title">Explore Our Ocean World</h3>
       <div class="row">
         <div class="col">
-          <p><i class="fa-solid fa-fish"></i></p>
+          <p class="explore__icon explore__icon--fish">
+            <i class="fa-solid fa-fish"></i>
+          </p>
           <h4>Marine Life</h4>
           <p>
             Discover over 500 species of marine animals from around the World in
@@ -41,7 +45,9 @@
           </p>
         </div>
         <div class="col">
-          <p><i class="fa-solid fa-users"></i></p>
+          <p class="explore__icon explore__icon--users">
+            <i class="fa-solid fa-users"></i>
+          </p>
           <h4>Educational Programs</h4>
           <p>
             Interactive learning experiences and school programs designed to
@@ -49,7 +55,9 @@
           </p>
         </div>
         <div class="col">
-          <p><i class="fa-solid fa-users"></i></p>
+          <p class="explore__icon explore__icon--location">
+            <i class="fa-solid fa-location-dot"></i>
+          </p>
           <h4>Prime Location</h4>
           <p>
             Conveniently located in the heart of Washington,easily accessible
@@ -59,66 +67,81 @@
       </div>
     </section>
     <section class="featured">
-      <h3 class="featured__title">Featured Marine Species</h3>
-      <div class="row">
-        <div class="col">
-          <img
-            src="images/featured-01.webp"
-            alt="An image of a giant octopus"
-          />
-          <h4>Pacific Giant Octopus</h4>
-          <p>Intelligent with remarkable problem-solving abilities</p>
+      <div class="container">
+        <h3 class="featured__title">Featured Marine Species</h3>
+        <div class="row">
+          <div class="col">
+            <img
+              src="images/featured-01.webp"
+              alt="An image of a giant octopus"
+            />
+            <h4>Pacific Giant Octopus</h4>
+            <p>Intelligent with remarkable problem-solving abilities</p>
+          </div>
+          <div class="col">
+            <img src="images/featured-02.jpeg" alt="" An image of a Shark />
+            <h4>Coral Reef Sharks</h4>
+            <p>Magnificient predators in our 500,000 - gallon reef exhibit</p>
+          </div>
+          <div class="col">
+            <img src="images/featured-03.jpeg" alt="An Image of a sea turtle" />
+            <h4>Sea Turtles</h4>
+            <p>Ancient mariners rescued and rehabilitated at our facility</p>
+          </div>
         </div>
-        <div class="col">
-          <img src="images/featured-02.jpeg" alt="" An image of a Shark />
-          <p>Magnificient predators in our 500,000 - gallon reef exhibit</p>
-        </div>
-        <div class="col">
-          <img src="images/featured-03.jpeg" alt="An Image of a sea turtle" />
-          <h4>Sea Turtles</h4>
-          <p>Ancient mariners rescued and rehabilitated at our facility</p>
-        </div>
+        <a href="#" class="featured__button">View All Species</a>
       </div>
-      <a href="#" class="featured__button">View all Species</a>
     </section>
     <section class="visit">
-      <h3>Plan Your Visit Today</h3>
-      <div class="row">
-        <div class="col">
-          <a href="#" class="visit__button visit__button--primary">Book Now</a>
-        </div>
-        <div class="col">
-          <a href="#" class="visit__button">Get Directions</a>
+      <div class="container">
+        <h3>Plan Your Visit Today</h3>
+        <p>
+          Experience the magic of our underwater world and create memories that
+          will last a lifetime
+        </p>
+        <div class="row">
+          <div class="col">
+            <a href="#" class="visit__button">Book Now</a>
+          </div>
+          <div class="col">
+            <a href="#" class="visit__button visit__button--primary"
+              >Get Directions</a
+            >
+          </div>
         </div>
       </div>
     </section>
     <footer class="footer">
-      <div class="row">
-        <div class="col">
-          <h4>Contact Information</h4>
-          <p>
-            <i class="fa-solid fa-location-dot"></i>1234 Ocean Drive,
-            Washington, DC 20001
-          </p>
-          <p><i class="fa-solid fa-phone"></i>(202) 555-FISH</p>
-          <p><i class="fa-solid fa-envelope"></i>info@nexusaquarium.com</p>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h4 class="footer__title">Contact Information</h4>
+            <p>
+              <i class="fa-solid fa-location-dot"></i>1234 Ocean Drive,
+              Washington, DC 20001
+            </p>
+            <p><i class="fa-solid fa-phone"></i>(202) 555-FISH</p>
+            <p><i class="fa-solid fa-envelope"></i>info@nexusaquarium.com</p>
+          </div>
+          <div class="col">
+            <h4 class="footer__title">Opening Hours</h4>
+            <div class="footer__opening__hours">
+              <span><i class="fa-solid fa-clock"></i></span>
+              <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+              <p>Saturday - Sunday: 8:00 AM - 8:00 PM</p>
+            </div>
+          </div>
+          <div class="col footer__quick__links">
+            <h4 class="footer__title">Quick Links</h4>
+            <a href="#">Children's Events</a>
+            <a href="#">Book a visit</a>
+            <a href="#">Marine Species</a>
+            <a href="#">Leave Feedback</a>
+          </div>
         </div>
-        <div class="col">
-          <h4>Opening Hours</h4>
-          <span><i class="fa-solid fa-clock"></i></span>
-          <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
-          <p>Saturday - Sunday: 8:00 AM - 8:00 PM</p>
-        </div>
-        <div class="col">
-          <h4>Quick Links</h4>
-          <a href="#">Children's Events</a>
-          <a href="#">Book a visit</a>
-          <a href="#">Marine Species</a>
-          <a href="#">Leave Feedback</a>
-        </div>
+        <hr />
+        <p>&copy; 2025 Nexus Aquarium. All rights reserved.</p>
       </div>
-      <hr />
-      <p>&copy; 2025 Nexus Aquarium. All rights reserved.</p>
     </footer>
   </body>
 </html>
