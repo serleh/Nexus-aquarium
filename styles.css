@@ -72,6 +72,7 @@ footer {
 
 .explore__title {
   font-size: calc(30 / 16 * 1rem);
+  margin: 20px;
 }
 
 .explore__icon {
@@ -94,6 +95,16 @@ footer {
 .explore__icon--location {
   background: #ffedd5;
   color: orange;
+}
+
+.explore .col {
+  transition: transform 0.6s ease;
+  cursor: pointer;
+}
+
+.explore .col:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* Featured section */
@@ -188,13 +199,34 @@ footer {
 @media (min-width: 600px) {
   .row {
     display: flex;
+    justify-content: space-between;
   }
 
   .col {
-    width: 100%;
+    width: 30%;
   }
 
   section h3 {
     font-size: 2rem;
+  }
+
+  .visit .row {
+    width: 80%;
+    justify-content: center;
+    margin: auto;
+    margin-top: 30px;
+  }
+  .visit__button {
+    width: 100px;
+    font-size: calc(12 / 16 * 1rem);
+  }
+
+  .footer__opening__hours {
+    flex-direction: column;
+  }
+
+  .footer__lastP {
+    text-align: center;
+    margin-top: 20px;
   }
 }
