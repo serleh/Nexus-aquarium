@@ -29,6 +29,88 @@ section,
 footer {
   padding: 3em 0;
 }
+
+/* NAVIGATIONS*/
+header {
+  background: #1e3a8a;
+  position: fixed;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  padding: 15px 30px;
+}
+
+.navbar__links {
+  display: flex;
+  list-style: none;
+}
+
+.navbar__links li {
+  margin: 0 15px;
+}
+
+.navbar__links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navbar__links a:hover {
+  color: skyblue;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #fff;
+  margin: 4px 0;
+  border-radius: 2px;
+}
+
+@media (max-width: 860px) {
+  .navbar__links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #1e3a8a;
+
+    position: absolute;
+    top: 40px;
+    left: 0;
+    padding: 10px 0;
+  }
+
+  .navbar__links li {
+    text-align: center;
+    margin: 5 0;
+  }
+  .hamburger {
+    display: flex;
+  }
+
+  /* Show menu when actice*/
+
+  .navbar__links.active {
+    display: flex;
+  }
+}
+
 .main {
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
     url(images/hero.jpeg) no-repeat center center/cover;
