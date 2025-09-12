@@ -1,0 +1,145 @@
+.marine {
+  padding-top: 100px;
+}
+
+.marine__content {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.search {
+  padding: 30px;
+}
+
+.search input {
+  width: 80%;
+  padding: 15px;
+
+  margin: 10px;
+}
+
+.search input:focus {
+  border-color: #000;
+}
+
+.search select {
+  width: 200px;
+  padding: 13px;
+  background: #fff;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.table {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.table .container {
+  width: 80%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin-top: 12px;
+  border-radius: 12px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.container th {
+  background: #1e3a8a;
+  color: #fff;
+  text-align: left;
+  padding: 12px 16px;
+  font-size: 14px;
+  border-bottom: 1px solid #eee;
+}
+
+.container td {
+  padding: 12px 16px;
+  vertical-align: top;
+  font-size: 14px;
+  border-bottom: 1px solid #eee;
+}
+
+.container td h6 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: #111;
+}
+
+.container td p {
+  margin: 4px 0 0;
+  font-size: 13px;
+  color: #555;
+}
+
+.container tr:nth-child(even) {
+  background: #f9fafb;
+}
+
+.container td:last-child {
+  font-size: 13px;
+  font-weight: 500;
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 16px;
+  color: #444;
+  background: #e5e7eb;
+}
+
+.container td:last-child:contains("Endangered") {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+.container td:last-child:contains("Near Threatened") {
+  background: #fef3c7;
+  color: #b45309;
+}
+.container td:last-child:contains("Least Concern"),
+.container td:last-child:contains("Stable") {
+  background: #dcfce7;
+  color: #166534;
+}
+.container td:last-child:contains("Vulnerable") {
+  background: #fde68a;
+  color: #92400e;
+}
+
+.status {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+}
+.status.endangered {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+.status.near-threatened {
+  background: #fef3c7;
+  color: #b45309;
+}
+.status.least-concern {
+  background: #dcfce7;
+  color: #166534;
+}
+.status.stable {
+  background: #d1fae5;
+  color: #065f46;
+}
+.status.vulnerable {
+  background: #fde68a;
+  color: #92400e;
+}
+
+@media (min-width: 860px) {
+  .visit div {
+    width: 70%;
+    margin: 0 auto;
+  }
+}

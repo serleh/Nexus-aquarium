@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nexus| Marine</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../styles/gallery.css" />
+    <link rel="stylesheet" href="../styles/marine.css" />
+
+    <!-- Font awesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="container navbar">
+        <div class="logo">Nexus Aquarium</div>
+        <ul class="navbar__links">
+          <li><a href="../pages/gallery.html">Home</a></li>
+          <li><a href="../pages/gallery.html">Gallery</a></li>
+          <li><a href="#marine.html">Marine Life</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Feedback</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+    <section class="marine">
+      <div class="marine__content">
+        <h3>Marine Life Directory</h3>
+        <p>
+          Discover the diverse species that call our aquarium home, from tiny
+          seahorses to majestic manta rays
+        </p>
+      </div>
+      <div class="search container">
+        <input placeholder="Search species by name or scientific name..." />
+        <label for="habitat"></label>
+        <select name="habitat" id="habitat">
+          <option value="option1">Pacific Ocean</option>
+          <option value="option2">Tropical Ocean</option>
+          <option value="option3">Coral Reefs</option>
+          <option value="option4">Seagrass Beds</option>
+          <option value="option5" selected>All Habitats</option>
+        </select>
+      </div>
+    </section>
+    <section class="table">
+      <table class="container">
+        <tr>
+          <th>Species</th>
+          <th>Scientific Name</th>
+          <th>Habitat</th>
+          <th>Diet</th>
+          <th>Lifespan</th>
+          <th>Size</th>
+          <th>Conservation Status</th>
+        </tr>
+
+        <tr>
+          <td>
+            <h6>Pacific Giant Octopus</h6>
+            <p>
+              Highly intelligent mollusk known for problem-solving abilities
+            </p>
+          </td>
+          <td>Enteroctopus dofleini</td>
+          <td>Pacific Ocean</td>
+          <td>Pacific Ocean</td>
+          <td>3-5 years</td>
+          <td>Up to 30 feet</td>
+          <td><span class="status near-threatened">Near Threatened</span></td>
+        </tr>
+
+        <tr>
+          <td>
+            <h6>Green Sea Turtle</h6>
+            <p>Ancient mariners that migrate thousands of miles</p>
+          </td>
+          <td>Chelonia mydas</td>
+          <td>Tropical Oceans</td>
+          <td>Herbivore</td>
+          <td>80+ years</td>
+          <td>3-4 feet</td>
+          <td><span class="status endangered">Endangered</span></td>
+        </tr>
+
+        <tr>
+          <td>
+            <h6>Blacktip Reef Shark</h6>
+            <p>Agile predator essential to reef ecosystem health</p>
+          </td>
+          <td>Carcharhinus melanopterus</td>
+          <td>Coral Reefs</td>
+          <td>Carnivore</td>
+          <td>12-15 years</td>
+          <td>4-5 feet</td>
+          <td><span class="status near-threatened">Near Threatened</span></td>
+        </tr>
+
+        <tr>
+          <td>
+            <h6>Moon Jellyfish</h6>
+            <p>Moon Jellyfish</p>
+          </td>
+          <td>Aurelia aurita</td>
+          <td>Coastal Waters</td>
+          <td>Plankton</td>
+          <td>1-2 years</td>
+          <td>10-16 inches</td>
+          <td><span class="status least-concern">Least Concern</span></td>
+        </tr>
+
+        <tr>
+          <td>
+            <h6>Clownfish</h6>
+            <p>Colorful reef fish living symbiotically with anemones</p>
+          </td>
+          <td>Amphiprioninae</td>
+          <td>Coral Reefs</td>
+          <td>Omnivore</td>
+          <td>6-10 years</td>
+          <td>2-5 inches</td>
+          <td><span class="status stable">Stable</span></td>
+        </tr>
+
+        <tr>
+          <td>
+            <h6>Giant Pacific Manta Ray</h6>
+            <p>Graceful giants that filter feed on plankton</p>
+          </td>
+          <td>Mobula birostris</td>
+          <td>Open Ocean</td>
+          <td>Filter Feeder</td>
+          <td>50+ years</td>
+          <td>Up to 23 feet</td>
+          <td><span class="status vulnerable">Vulnerable</span></td>
+        </tr>
+
+        <tr>
+          <td>
+            <h6>Seahorse</h6>
+            <p>Unique fish where males carry and birth the young</p>
+          </td>
+          <td>Hippocampus</td>
+          <td>Seagrass Beds</td>
+          <td>Carnivore</td>
+          <td>1-5 years</td>
+          <td>1-14 inches</td>
+          <td><span class="status vulnerable">Vulnerable</span></td>
+        </tr>
+
+        <tr>
+          <td>
+            <h6>Blue Tang</h6>
+            <p>Vibrant blue fish important for algae control on reefs</p>
+          </td>
+          <td>Paracanthurus hepatus</td>
+          <td>Coral Reefs</td>
+          <td>Herbivore</td>
+          <td>12-20 years</td>
+          <td>4-6 inches</td>
+          <td><span class="status least-concern">Least Concern</span></td>
+        </tr>
+      </table>
+    </section>
+    <section class="gallery__visit">
+      <div class="container visit">
+        <div>
+          <h3>Conservation Commitment</h3>
+          <p>
+            At Nexus Aquarium, we're dedicated to marine conservation and
+            education. Many of our species are part of breeding programs and
+            rescue efforts to help protect these magnificent creatures for
+            future generations. Your visit directly supports these vital
+            conservation initiatives.
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h4 class="footer__title">Contact Information</h4>
+            <p>
+              <i class="fa-solid fa-location-dot"></i>1234 Ocean Drive,
+              Washington, DC 20001
+            </p>
+            <p><i class="fa-solid fa-phone"></i>(202) 555-FISH</p>
+            <p><i class="fa-solid fa-envelope"></i>info@nexusaquarium.com</p>
+          </div>
+          <div class="col">
+            <h4 class="footer__title">Opening Hours</h4>
+            <div class="footer__opening__hours">
+              <span><i class="fa-solid fa-clock"></i></span>
+              <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+              <p>Saturday - Sunday: 8:00 AM - 8:00 PM</p>
+            </div>
+          </div>
+          <div class="col footer__quick__links">
+            <h4 class="footer__title">Quick Links</h4>
+            <a href="#">Children's Events</a>
+            <a href="#">Book a visit</a>
+            <a href="#">Marine Species</a>
+            <a href="#">Leave Feedback</a>
+          </div>
+        </div>
+        <hr />
+        <p class="footer__lastP">
+          &copy; 2025 Nexus Aquarium. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <script src="../index.js"></script>
+  </body>
+</html>
